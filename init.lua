@@ -1,2 +1,1 @@
 require("spectre")
-print("hello")
