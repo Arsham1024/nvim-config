@@ -1,4 +1,5 @@
 require("spectre.remap")
-print("hello from spectre")
+require("spectre.lazy_init")
+require("spectre.set")
 
 
