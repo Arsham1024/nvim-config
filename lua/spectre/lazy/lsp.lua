@@ -86,9 +86,9 @@ return {
                 end,
             },
             mapping = cmp.mapping.preset.insert({
-                ['<c-p>'] = cmp.mapping.select_prev_item(cmp_select),
-                ['<c-n>'] = cmp.mapping.select_next_item(cmp_select),
-                ['<c-y>'] = cmp.mapping.confirm({ select = true }),
+                ['<c-k>'] = cmp.mapping.select_prev_item(cmp_select),
+                ['<c-j>'] = cmp.mapping.select_next_item(cmp_select),
+                ['<Tab>'] = cmp.mapping.confirm({ select = true }),
                 ["<c-Space>"] = cmp.mapping.complete(),
             }),
             sources = cmp.config.sources({
