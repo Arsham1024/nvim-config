@@ -18,5 +18,8 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
     spec = "spectre.lazy",
-    change_detection = { notify = false }
+    change_detection = { notify = false },
+    vim.keymap.set('n', '<leader>l', function ()
+        vim.cmd('Lazy') -- same as typing :Lazy
+    end, {desc="opens Lazy interface"})
 })
